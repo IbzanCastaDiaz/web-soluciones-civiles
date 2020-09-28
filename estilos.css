@@ -1,0 +1,117 @@
+/* Generales */
+.text-platzi {
+    color: #97c93e !important;
+}
+.btn-platzi {
+    background: #97c93e;
+    color: white;
+}
+.btn-platzi:hover {
+    background-color: #82ad36;
+}
+
+/* Header */
+#header {
+    background: linear-gradient(145deg,#ffffff, #caebf2);
+    !important;
+}
+#header img {
+    width: 50px;
+}
+#main img {
+    width: 80px;
+}
+
+/* Main */
+#main .carousel-inner img {
+    max-height: 70vH;
+    /* la imagen se encuentra desproporcionada, para cambiar esto aplicamos objet-fit: cover; */
+    object-fit: cover;
+    /* filto */
+    filter: grayscale(70%);
+}
+#carousel {
+    position:relative;
+}
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 1;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+#carousel .overlay img {
+    height: 300px;
+}
+
+/* detail-of-services */
+.service {
+    background-color: #343a40;
+    color: white;
+    border: 2px solid white;
+    /* border-radius: 20px; */
+    align-items: center;
+}
+#detail-of-services img {
+    max-width: 100%;
+}
+
+/* Proyectos */
+#proyect .carousel-inner img {
+    max-height: 70vH;
+    /* la imagen se encuentra desproporcionada, para cambiar esto aplicamos objet-fit: cover; */
+    object-fit: cover;
+    /* filto */
+    filter: grayscale(70%);
+}
+
+
+
+
+/* footer */
+#footer {
+    background:linear-gradient(90deg, #1c3643, #273b47, 25%, #1e5372);
+}
+
+#footer {
+    color:white;
+}
+#footer img {
+    padding: 10px;
+    width: 80px;
+  }
+
+  /* button flotante */
+#button {
+    position: fixed;
+    z-index: 3;
+    bottom: 20px;
+    left: 50px;
+  }
+#button img{
+    height: 60px;
+    width: 60px;
+}
+#button:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+
+
+  @media screen and (max-width: 720px) {
+    #button {
+        bottom: 10px;
+        left: 10px;
+      }
+    #button img{
+        height: 40px;
+        width: 40px;
+      }
+}
